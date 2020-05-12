@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.header {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+      rgba(0, 168, 255, 0.3),
+      rgba(0, 168, 255, 0.3)
+    ),
+    url("../image/image3.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  clip-path: polygon(100% 0%, 100% 77%, 50% 100%, 0 75%, 0 0);
+  position: relative;
+}
+.header:before {
+  content: "";
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  opacity: 0.3;
+  z-index: -1;
+  background-color: linear-gradient(
+    to right,
+    #1e571e 0%,
+    #3ccdbb 0%,
+    #16c9f6 100%
+  );
+}
+.navbar:before {
+  content: "";
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  opacity: 0.3;
+  z-index: -1;
+  background-color: linear-gradient(
+    to right,
+    #1e571e 0%,
+    #3ccdbb 0%,
+    #16c9f6 100%
+  );
+}
+.nav-item a {
+  color: black !important;
+  font-weight: bold;
+}
+.header-sction {
+  width: 100%;
+  height: initial;
+  color: whitesmoke;
+  text-align: center;
+  position: relative;
+}
+.center-div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: auto;
+  left: auto;
+  margin-top: 22%;
+}
+
+li a:hover:not(.active) {
+  background-color: #ddd;
+}
+.navbar-brand {
+  width: 16%;
+  border: 1px solid rgb(113, 245, 250);
+  padding: 10px;
+}
